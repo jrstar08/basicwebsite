@@ -20,7 +20,7 @@
     <div class="row justify-content-center">
         <div>
             <div class="card container-1">
-                <div class="card-header" style="text-align:center;">{{ __('Login') }}</div>
+                <div class="card-header" style="text-align:center;"><h1>{{ __('Login') }}</h1></div>
 
                 <div class="card-body form1">
                     <form method="POST" action="{{ route('login') }}">
