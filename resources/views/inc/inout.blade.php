@@ -3,9 +3,9 @@
 <table data-vertable="ver1">
 						<thead>
 							<tr class="row100 head">
-    <th class="column100 column2" data-column="column2"DATE</th>
-    <th class="column100 column3" data-column="column3"TIME IN</th>
-    <th class="column100 column4" data-column="column4"TIME OUT</th>
+    <th class="column100 column2" data-column="column2">DATE</th>
+    <th class="column100 column3" data-column="column3">TIME IN</th>
+    <th class="column100 column4" data-column="column4">TIME OUT</th>
     <th class="column100 column5" data-column="column5">UNDERTIME</th>
     <th class="column100 column6" data-column="column6">ADJUST</th>
   </tr>
