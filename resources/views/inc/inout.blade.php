@@ -1,20 +1,4 @@
-<!--<div class="row">
-      <div class="col-md-2 col-lg-2">
-        <h4>DATE</h4>
-      </div>
-      <div class="col-md-2">
-      <h4>TIME IN</h4>
-      </div>
-      <div class="col-md-2">
-      <h4>TIME OUT</h4>
-      </div>
-      <div class="col-md-2">
-      <h4>OVERTIME</h4>
-      </div>
-      <div class="col-md-2">
-      <h4>UNDERTIME</h4>
-      </div>
-    </div>-->
+<div class="row">
    <div class="col-md-9 offset-3">
 <h2>Time Keeping Table</h2>
 <table>
@@ -69,4 +53,5 @@
     
   </tr>
 </table>
+</div>
 </div>
