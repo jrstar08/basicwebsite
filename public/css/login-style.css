@@ -1976,10 +1976,10 @@ pre code {
 }
 
 .container {
-  width: 10px;
   margin-top:150px;
-  border: solid 1px;
-  border-radius:30px;
+  border: solid 0px;
+  border-radius:15px;
+  box-shadow: 1px 1px 5px 1px #02094bbd
 }
 
 .container:before,
@@ -3790,8 +3790,10 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: rgb(34, 93, 121);
   border-color: transparent;
-  padding-left:205px;
-  padding-right:200px;
+  padding-left:100px;
+  padding-right:100px;
+  margin-left: 90px;
+  margin-top:15px;
   
 }
 
@@ -4118,7 +4120,7 @@ fieldset[disabled] .btn-danger.focus {
   color: #3097D1;
   font-weight: normal;
   border-radius: 0;
- padding-left: 110px;
+  margin-left: 140px;
 }
 
 .btn-link,
@@ -7849,12 +7851,8 @@ cursor: pointer;
 	display: inline-block;
 }
 
-.container-1{
-  float: initial;
-}
-
 .form1{
-  margin-left:150px;
+  margin-left:30px;
 }
 
 .card-header{

@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="/css/login-style.css">
 </head>
 <body>
-<div class="container">
+<div class="container" style="width:430px;">
     <div class="row justify-content-center">
         <div>
-            <div class="card container-1">
-                <div class="card-header" style="text-align:center;"><h1>{{ __('Login') }}</h1></div>
-
-                <div class="card-body form1">
+            <div class="container-1">
+                <!--<div class="card-head" style="text-align:center;"><h1>{{ __('myCaptivate') }}</h1></div>-->
+                <img src="img/CaptivateTechnologies.png" alt="logo" style="width:50%; margin: 15px 0px 15px 25%;">
+                <div class="form1">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
-                        <div class="form-group row form1">
-                            <label for="email" class="col-sm-2 col-form-label ">{{ __('E-Mail Address') }}</label>
+                        <div class="row form1">
+                            <label for="email" class="col-sm-4 col-form-label ">{{ __('E-Mail Address') }}</label>
 
-                            <div class="col-md-4">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+                            <div class="col-md-6">
+                                <input id="email" type="email" placeholder="Enter Captivate E-mail" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback">
@@ -41,10 +41,10 @@
                         </div>
 
                         <div class="form-group row form1">
-                            <label for="password" class="col-md-2 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
-                            <div class="col-md-4">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                            <div class="col-md-6">
+                                <input id="password" type="password" placeholder="Enter Password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback">
@@ -55,8 +55,8 @@
                         </div>
 
                        
-                        <div class="form-group row mb-0">
-                            <div class="col-sm-3">
+                        <div class="form-group row">
+                            <div class="col-sm-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
@@ -65,11 +65,11 @@
                                     {{ __('Forgot Your Password?') }}
                                 </a>
 
-                                <div class="checkbox">
+                                <!--<div class="checkbox">
                                     <label>
                                         <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
                                     </label>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </form>
