@@ -61,12 +61,13 @@ th, td {
 
 .column100.column3 {
   width: 5px;
-  padding-left: 62px;
 }
 
 .row100.head th {
   padding-top: 24px;
   padding-bottom: 20px;
+  text-align: center;
+  cursor: default;
 }
 
 .row100 td {
