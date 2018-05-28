@@ -69,6 +69,14 @@ Route::get('/status', function(){
     return view ('inc/trademark-status');
 });
 
+Route::get('/captivate', function(){
+    return view ('inc/material-requisitioncapt');
+});
+
+Route::get('/zafirah', function(){
+    return view ('inc/material-requisitionzaf');
+});
+
 Route::get('/messages', 'MessagesController@getMessages');
 
 Route::post('/contact/submit', 'MessagesController@submit');
@@ -88,3 +96,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+

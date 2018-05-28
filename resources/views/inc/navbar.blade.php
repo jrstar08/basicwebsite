@@ -1,4 +1,6 @@
 <!--Navbar-->
+<style>
+</style>
 <nav class="navbar navbar-fixed-top">
 
   <div class="">
@@ -25,12 +27,26 @@
           </li>
           <li class="dropdown {{Request::is('about') ? 'active' : ''}}">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">myFinance</a>
-            <ul class="dropdown-menu">
-              <li><a href="/material-requisition-form">Material Requisition Form</a></li>
+           <!-- <ul class="dropdown-menu">
+              <li><a href="/material-requisition-form" data-toggle="dropdown">Material Requisition Form</a>
+              <ul class="dropdown-menu"><li><a href="">Captivate</a></ul></li>
               <li><a href="/rpf">Requests for Payment Form</a></li>
               <li><a href="/e-payslip">E-Payslip</a></li>
             </ul>
-          </li>
+          </li>-->
+
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Material Requisition Form</a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="/captivate">Captivate Solutions</a></li>
+                  <li><a tabindex="-1" href="/zafirah">Zafirah Philippines</a></li>
+                </ul>
+            </li>
+            <li><a href="/rpf">Requests for Payment Form</a></li>
+            <li><a href="/e-payslip">E-Payslip</a></li>
+        </ul>
+    </li>
           <li class="dropdown {{Request::is('about') ? 'active' : ''}}">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">myHR</a>
           <ul class="dropdown-menu">
