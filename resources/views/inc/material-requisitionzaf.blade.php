@@ -58,7 +58,7 @@
 						</tbody>
 					</table>
 				</div>
-				<button class="btn btn-primary" style="margin-top:10px">Print</button>
+				<button onclick="printbutton()" class="btn btn-primary" style="margin-top:10px">Print</button>
 
 <!--<table id="editable" class="pure-table pure-table-bordered">
     <thead>
@@ -94,6 +94,10 @@
 <script src="js/mindmup-editable.js"></script>
 
 <script>
-    $('#editable').editableTableWidget();
+	$('#editable').editableTableWidget();
+	
+	function printbutton() {
+    window.print();
+}
 </script>
 @endsection
