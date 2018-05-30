@@ -9,10 +9,9 @@
         {{FORM::text ('name', '', ['class'=>'form-control','placeholder'=>'Enter Name'])}}   {{-- name, value, associative array of opttions for additional attribute --}}
     </div>
     <div class="form-group">
-    {{FORM::label('agenda', 'Agenda')}}
-        <div id="editor" class="form-control" name="agenda" value="Agenda" data-placeholder="Enter Agenda">
-        {{FORM::textarea ('agenda', '', ['id'=>'editor','class'=>'form-control','placeholder'=>'Enter Name'])}}
-        </div>
+        {{FORM::label('agenda', 'Agenda')}}
+        {{FORM::textarea ('agenda', '', ['class'=>'form-control','placeholder'=>'Enter Agenda'])}}
+        
     </div>
     <div class="form-group">
         {{FORM::label('time', 'Time')}}
@@ -26,14 +25,4 @@
         {{FORM::submit('Reserve', ['class'=>'btn btn-primary'])}}
     </div>
 {!! Form::close() !!}
-<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-
-<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-
-<!-- Initialize Quill editor -->
-<script>
-  var quill = new Quill('#editor', {
-    theme: 'snow'
-  });
-</script>
 @endsection
