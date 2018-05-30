@@ -24,7 +24,7 @@
 <body>
   
   @include('inc.navbar')
-  <div class="container">
+  <div class="container-fluid">
     @if(Request::is('/'))
       @include('inc.showcase')
 
